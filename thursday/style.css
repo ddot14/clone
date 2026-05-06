@@ -1,0 +1,131 @@
+body{
+    background: linear-gradient( 135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+H1{
+    color: white;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+p{
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.container{
+    display: flex;/* arrange boxes side by side */
+    gap: 20px; /* space between boxes */
+    flex-wrap: wrap; /* allow boxes to wrap to the next line on smaller screens */
+    justify-content: center; /* center the boxes horizontally */
+    margin-top: 30px;
+}
+.box{
+     background: linear-gradient( 135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #f8f8f8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.box h2{
+    margin-top: 0;
+    color: #0d0e0d;
+}   
+.box p{
+    color: #a5e7c1;
+}
+.box a{
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+.box1{
+    background: linear-gradient( 135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #f8f8f8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.box1 h2{
+    margin-top: 0;
+    color: #333;
+}
+.box1 p{
+    color: #cce0d8;
+}
+.box1 a{
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.plans-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.plans-container h1{
+    color: white;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.plan-card{
+    background: linear-gradient( 135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #f8f8f8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.plan-card h3{
+    margin-top: 0;
+    color: #333;
+}
+.plan-card p{
+    color: #cce0d8;
+}
+.plan-card a{
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .container, .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box, .plan-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
